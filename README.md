@@ -72,9 +72,8 @@ function menuPrincipal() {
         default:
             console.log("Opção inválida, tente novamente.");
             menuPrincipal();
-    }
-}
-
+    };
+};
 menuPrincipal();
 `
 
