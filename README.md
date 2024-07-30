@@ -77,6 +77,7 @@ function menuPrincipal() {
 menuPrincipal();
 ```
 
+```javascript
 function adicionarContato() {
     let id = contatos.length + 1;
     let nome = prompt('Qual o nome do contato?');
@@ -86,9 +87,9 @@ function adicionarContato() {
     console.log('Contato adicionado com sucesso, retornando para o menu...');
     menuPrincipal();
 }
-
 module.exports = { adicionarContato };
-
+```
+```javascript
 function listarContatos() {
     if (contatos.length === 0) {
         console.log('Não há contatos salvos! Retornando...');
@@ -99,9 +100,10 @@ function listarContatos() {
     }
     menuPrincipal();
 }
-
 module.exports = { listarContatos };
+```
 
+```javascript
 function atualizarContato(callback) {
     callback();
     let selecao = parseInt(prompt('Qual contato gostaria de atualizar?'));
@@ -113,9 +115,10 @@ function atualizarContato(callback) {
     console.log("Contato atualizado com sucesso, retornando ao menu...");
     menuPrincipal();
 }
-
 module.exports = { atualizarContato };
+```
 
+```javascript
 function removerContato(callback) {
     callback();
     let selecao = parseInt(prompt('Qual contato gostaria de remover?')) - 1;
@@ -123,15 +126,15 @@ function removerContato(callback) {
     console.log("Contato removido com sucesso, retornando ao menu...");
     menuPrincipal();
 }
-
 module.exports = { removerContato };
+```
 
 ## How to Use
 Run the inicio.js script to start the application:
 
-bash
-Copiar código
+```bash
 node inicio.js
+```
 Follow the on-screen prompts to manage your contacts:
 
 Add new contacts
