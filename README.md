@@ -39,7 +39,7 @@ The project consists of the following main files:
 
 This script initializes the application and sets up the global variables.
 
-`javascript
+```javascript
 global.prompt = require('prompt-sync')();
 global.contatos = [];
 global.menuPrincipal = menuPrincipal;
@@ -75,7 +75,7 @@ function menuPrincipal() {
     };
 };
 menuPrincipal();
-`
+```
 
 function adicionarContato() {
     let id = contatos.length + 1;
