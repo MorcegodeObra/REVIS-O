@@ -76,7 +76,7 @@ function menuPrincipal() {
 };
 menuPrincipal();
 ```
-
+### 2. `adicionarContatos.js`
 ```javascript
 function adicionarContato() {
     let id = contatos.length + 1;
@@ -89,6 +89,7 @@ function adicionarContato() {
 }
 module.exports = { adicionarContato };
 ```
+### 3. `listarContatos.js`
 ```javascript
 function listarContatos() {
     if (contatos.length === 0) {
@@ -102,7 +103,7 @@ function listarContatos() {
 }
 module.exports = { listarContatos };
 ```
-
+### 4. `atualizarContatos.js`
 ```javascript
 function atualizarContato(callback) {
     callback();
@@ -117,7 +118,7 @@ function atualizarContato(callback) {
 }
 module.exports = { atualizarContato };
 ```
-
+### 5. `removerContatos.js`
 ```javascript
 function removerContato(callback) {
     callback();
@@ -136,11 +137,3 @@ Run the inicio.js script to start the application:
 node inicio.js
 ```
 Follow the on-screen prompts to manage your contacts:
-
-Add new contacts
-List existing contacts
-Update contacts
-Remove contacts
-Exit the application
-License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
