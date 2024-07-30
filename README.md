@@ -75,7 +75,7 @@ function menuPrincipal() {
     }
 }
 
-menuPrincipal();´´´
+menuPrincipal();```
 
 function adicionarContato() {
     let id = contatos.length + 1;
